@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace src\Bees;
 
 class BuilderBee extends WorkerBee
@@ -9,7 +11,8 @@ class BuilderBee extends WorkerBee
         parent::__construct("Builder");
     }
 
-    public function work(): void {
+    public function work(): void
+    {
         echo $this->isAlive ? "Builder is constructing the hive.\n" : "Builder cannot work because it is dead.\n";
     }
 }

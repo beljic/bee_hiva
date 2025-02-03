@@ -16,12 +16,9 @@ echo "Hive is operational.\n";
 // Put all bees to work
 foreach ($hive->getBees() as $bee) {
     $bee->work();
-
 }
 
 // Stop all bees from working
 foreach ($hive->getBees() as $bee) {
     $bee->die();
 }
-
-
