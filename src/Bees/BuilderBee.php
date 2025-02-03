@@ -2,8 +2,10 @@
 
 namespace src\Bees;
 
-class BuilderBee extends WorkerBee {
-    public function __construct() {
+class BuilderBee extends WorkerBee
+{
+    public function __construct()
+    {
         parent::__construct("Builder");
     }
 

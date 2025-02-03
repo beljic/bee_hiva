@@ -2,4 +2,6 @@
 
 namespace src\Bees;
 
-abstract class WorkerBee extends Bee {}
+abstract class WorkerBee extends Bee
+{
+}

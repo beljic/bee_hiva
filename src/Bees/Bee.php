@@ -3,9 +3,11 @@
 namespace src\Bees;
 
 use src\Interfaces\Workable;
+use src\Interfaces\LifeCycle;
+
 use src\Logger;
 
-abstract class Bee implements Workable {
+abstract class Bee implements Workable, LifeCycle {
     use Logger;
 
     public function __construct(
